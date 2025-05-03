@@ -1,0 +1,15 @@
+{
+  "domain": "sensus_analytics",
+  "name": "Sensus Analytics Integration (Natural Gas)",
+  "version": "0.1.0",
+  "documentation": "https://github.com/marlinofdoom/HomeAssistant_SA_gas",
+  "issue_tracker": "https://github.com/marlinofdoom/HomeAssistant_SA_gas/issues",
+  "dependencies": [],
+  "codeowners": ["@marlinofdoom"],
+  "requirements": [
+    "aiohttp>=3.8.1",
+    "homeassistant>=2024.11.3"
+  ],
+  "iot_class": "cloud_polling",
+  "config_flow": true
+}

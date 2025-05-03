@@ -1,0 +1,129 @@
+{
+  "title": "Sensus Analytics",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Sensus Analytics",
+        "data": {
+          "base_url": "Base URL",
+          "base_url_description": "Enter the base URL for the Sensus Analytics API (e.g., https://api.sensus.com).",
+          "username": "Username",
+          "username_description": "Enter your Sensus Analytics username.",
+          "password": "Password",
+          "password_description": "Enter your Sensus Analytics password.",
+          "account_number": "Account Number",
+          "account_number_description": "Enter your Sensus Analytics account (customer) number.",
+          "gas_meter_number": "Natural Gas Meter Number",
+          "gas_meter_number_description": "Enter your Sensus Analytics natural gas meter number.",
+          "gas_unit_type": "Unit Type (CCF or Therm)",
+          "gas_unit_type_description": "Select the unit type. 'CCF' stands for 100 cubic feet and Therm stands for 100,000 BTUs.",
+          "gas_commodity_fixed_price": "Natural Gas Commodity Price (Fixed)",
+          "gas_commodity_fixed_price_description": "Enter the fixed price per therm for gas (e.g., 0.32).",
+          "gas_commodity_variable_price": "Natural Gas Commodity Price (Variable)",
+          "gas_commodity_variable_price_description": "Enter the variable price per therm for gas (e.g., 0.11).",
+          "gas_heat_content_factor": "Variable heat content factor to convert natural gas between CCF and Therms",
+          "gas_heat_content_factor_description": "Enter the heat content factor used to convert CCF to Therms (e.g., 1.025).",
+          "gas_service_fee": "Natural Gas Service Fee",
+          "gas_service_fee_description": "Enter the fixed natural gas service fee amount (e.g., 15.00)."
+        }
+      },
+      "init": {
+        "title": "Configure Sensus Analytics Options",
+        "data": {
+          "base_url": "Base URL",
+          "base_url_description": "Enter the base URL for the Sensus Analytics API (e.g., https://api.sensus.com).",
+          "username": "Username",
+          "username_description": "Enter your Sensus Analytics username.",
+          "password": "Password",
+          "password_description": "Enter your Sensus Analytics password.",
+          "account_number": "Account Number",
+          "account_number_description": "Enter your Sensus Analytics account (customer) number.",
+          "gas_meter_number": "Natural Gas Meter Number",
+          "gas_meter_number_description": "Enter your Sensus Analytics natural gas meter number.",
+          "gas_unit_type": "Unit Type (CCF or Therm)",
+          "gas_unit_type_description": "Select the unit type. 'CCF' stands for 100 cubic feet and Therm stands for 100,000 BTUs.",
+          "gas_commodity_fixed_price": "Natural Gas Commodity Price (Fixed)",
+          "gas_commodity_fixed_price_description": "Enter the fixed price per therm for gas (e.g., 0.32).",
+          "gas_commodity_variable_price": "Natural Gas Commodity Price (Variable)",
+          "gas_commodity_variable_price_description": "Enter the variable price per therm for gas (e.g., 0.11).",
+          "gas_heat_content_factor": "Variable heat content factor to convert natural gas between CCF and Therms",
+          "gas_heat_content_factor_description": "Enter the heat content factor used to convert CCF to Therms (e.g., 1.025).",
+          "gas_service_fee": "Service Fee",
+          "gas_service_fee_description": "Enter the fixed electric service fee amount (e.g., 13.00)."
+        }
+      }
+    },
+    "error": {
+      "auth": "Authentication failed"
+    },
+    "abort": {
+      "already_configured": "This account is already configured."
+    }
+  },
+  "sensor": {
+    "sensus_analytics_meter_address": {
+      "name": "Meter Address",
+      "description": "Street address of the utility meter."
+    },
+    "sensus_analytics_last_read": {
+      "name": "Last Read",
+      "description": "Timestamp of the last meter reading."
+    },
+    "sensus_analytics_meter_latitude": {
+      "name": "Meter Latitude",
+      "description": "Latitude coordinate of the meter's location."
+    },
+    "sensus_analytics_meter_longitude": {
+      "name": "Meter Longitude",
+      "description": "Longitude coordinate of the meter's location."
+    },
+    "sensus_analytics_last_hour_temperature": {
+      "name": "Last Hour Temperature",
+      "description": "Temperature for the last hour."
+    },
+    "sensus_analytics_last_hour_timestamp": {
+      "name": "Last Hour Timestamp",
+      "description": "Timestamp of the last hour's data from the previous day."
+    },
+    "sensus_analytics_gas_daily_usage": {
+      "name": "Gas Daily Usage",
+      "description": "Daily gas usage."
+    },
+    "sensus_analytics_gas_usage_unit": {
+      "name": "Gas Usage Unit",
+      "description": "Gas native unit of measurement chosen by Sensus Analytics."
+    },
+    "sensus_analytics_gas_meter_id": {
+      "name": "Gas Meter ID",
+      "description": "Unique identifier for the gas meter."
+    },
+    "sensus_analytics_gas_latest_read_usage": {
+      "name": "Latest Read Gas Usage",
+      "description": "Latest cumulative gas usage recorded by the meter."
+    },
+    "sensus_analytics_gas_billing_usage": {
+      "name": "Billing Gas Usage",
+      "description": "Total gas usage amount that has been billed."
+    },
+    "sensus_analytics_gas_billing_cost": {
+      "name": "Gas Billing Cost",
+      "description": "Total cost of the billed gas usage."
+    },
+    "sensus_analytics_gas_daily_fee": {
+      "name": "Gas Daily Fee",
+      "description": "Daily fee based on gas usage."
+    },
+    "sensus_analytics_gas_last_hour_usage": {
+      "name": "Last Hour Gas Usage",
+      "description": "Gas usage for the last hour."
+    },
+    "sensus_analytics_gas_meter_odometer": {
+      "name": "Gas Meter Odometer",
+      "description": "Total cumulative gas usage recorded by the meter."
+    },
+    "sensus_analytics_gas_hourly_timestamp": {
+      "name": "Gas Hourly Timestamp",
+      "description": "Timestamp of the last hour's data from the previous day."
+    }
+  }
+}

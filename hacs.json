@@ -1,0 +1,5 @@
+{
+  "name": "Sensus Analytics Integration (Natural Gas)",
+  "content_in_root": false,
+  "filename": "custom_components/sensus_analytics/manifest.json"
+}
