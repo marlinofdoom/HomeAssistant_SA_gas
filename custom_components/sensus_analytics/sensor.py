@@ -317,7 +317,7 @@ class SensusAnalyticsBillingCostSensor(StaticUnitSensorBase):
         if usage is None:
             return None
         usage_therm = self._convert_usage(usage)
-        return self._calculate_cost(usage_therm)
+        return self._calculate_gas_cost(usage_therm)
 
     def _calculate_gas_cost(self, usage_therm):
         """Calculate the billing cost based on tiers and service fee."""
@@ -348,7 +348,7 @@ class SensusAnalyticsDailyFeeSensor(StaticUnitSensorBase):
         if usage is None:
             return None
         usage_therm = self._convert_usage(usage)
-        return self._calculate_daily_fee(usage_therm)
+        return self._calculate_daily_gas_fee(usage_therm)
 
     def _calculate_daily_gas_fee(self, usage_therm):
         """Calculate the daily fee."""
