@@ -35,9 +35,6 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
     async_add_entities(sensors, True)
 
 
-
-
-
 # pylint: disable=too-few-public-methods
 class UsageConversionMixin:
     """Mixin to provide usage conversion."""
