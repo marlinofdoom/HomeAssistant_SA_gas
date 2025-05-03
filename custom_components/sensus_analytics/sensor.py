@@ -35,7 +35,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
     async_add_entities(sensors, True)
 
 
-CCF2THERM = self.coordinator.config_entry.data.get("gas_heat_content_factor")
+
 
 
 # pylint: disable=too-few-public-methods
@@ -51,6 +51,8 @@ class UsageConversionMixin:
             usage_unit = self.coordinator.data.get("usageUnit")
 
         config_unit_type = self.coordinator.config_entry.data.get("gas_unit_type")
+
+        CCF2THERM = self.coordinator.config_entry.data.get("gas_heat_content_factor")
 
         if usage_unit == "CCF" and config_unit_type == "Therm":
             try:
