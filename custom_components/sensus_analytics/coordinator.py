@@ -53,7 +53,7 @@ class SensusAnalyticsDataUpdateCoordinator(DataUpdateCoordinator):
             session = self._create_authenticated_session()
 
             # Fetch daily data
-            data = self._fetch_daily_data(session)
+            data = self._fetch_daily_gas_data(session)
 
             # Fetch hourly data
             _LOGGER.debug("Fetching hourly data")
