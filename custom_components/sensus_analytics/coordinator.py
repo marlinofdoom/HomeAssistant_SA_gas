@@ -94,7 +94,6 @@ class SensusAnalyticsDataUpdateCoordinator(DataUpdateCoordinator):
         _LOGGER.debug("Authentication successful")
         return session
 
-
     def _fetch_daily_gas_data(self, session):
         """Fetch daily gas meter data."""
         widget_url = urljoin(self.base_url, "gas/widget/byPage")
@@ -187,21 +186,21 @@ class SensusAnalyticsDataUpdateCoordinator(DataUpdateCoordinator):
         # The first element contains units
         units = usage_list[0]  # ["CCF", "INCHES", "FAHRENHEIT", "gal"]
         usage_unit = units[0]
-        rain_unit = units[1]    # FIX don't need this
+        rain_unit = units[1]  # FIX don't need this
         temp_unit = units[2]
 
         # The rest of the list contains hourly data
         hourly_entries = []
         for entry in usage_list[1:]:
-            timestamp, usage, rain, temp = entry[:4]    # FIX don't need rain
+            timestamp, usage, rain, temp = entry[:4]  # FIX don't need rain
             hourly_entries.append(
                 {
                     "timestamp": timestamp,
                     "usage": usage,
-                    "rain": rain,   # FIX don't need this
+                    "rain": rain,  # FIX don't need this
                     "temp": temp,
                     "usage_unit": usage_unit,
-                    "rain_unit": rain_unit, # FIX don't need this
+                    "rain_unit": rain_unit,  # FIX don't need this
                     "temp_unit": temp_unit,
                 }
             )

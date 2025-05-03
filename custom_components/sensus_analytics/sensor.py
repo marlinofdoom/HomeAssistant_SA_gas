@@ -11,6 +11,7 @@ from homeassistant.util import dt as dt_util
 
 from .const import DEFAULT_NAME, DOMAIN
 
+
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_entities):
     """Set up the Sensus Analytics sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
@@ -33,7 +34,9 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
     ]
     async_add_entities(sensors, True)
 
+
 CCF2THERM = self.coordinator.config_entry.data.get("gas_heat_content_factor")
+
 
 # pylint: disable=too-few-public-methods
 class UsageConversionMixin:
@@ -351,7 +354,7 @@ class SensusAnalyticsDailyFeeSensor(StaticUnitSensorBase):
         """Calculate the daily fee."""
         gas_fixed_price = self.coordinator.config_entry.data.get("gas_commodity_fixed_price")
         gas_variable_price = self.coordinator.config_entry.data.get("gas_commodity_variable_price") or 0
-        
+
         cost = 0
         if usage_therm is not None:
             cost += usage_therm * (gas_fixed_price + gas_variable_price)
