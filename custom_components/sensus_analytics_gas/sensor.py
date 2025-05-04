@@ -49,16 +49,16 @@ class UsageConversionMixin:
 
         config_unit_type = self.coordinator.config_entry.data.get("gas_unit_type")
 
-        CCF_to_THERM = self.coordinator.config_entry.data.get("gas_heat_content_factor")
+        ccf_to_therm = self.coordinator.config_entry.data.get("gas_heat_content_factor")
 
         if usage_unit == "CCF" and config_unit_type == "Therm":
             try:
-                return round(float(usage) * CCF_to_THERM)
+                return round(float(usage) * ccf_to_therm)
             except (ValueError, TypeError):
                 return None
         elif usage_unit == "Therm" and config_unit_type == "CCF":
             try:
-                return round(float(usage) / CCF_to_THERM)
+                return round(float(usage) / ccf_to_therm)
             except (ValueError, TypeError):
                 return None
         return usage
