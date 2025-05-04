@@ -29,7 +29,7 @@ jobs:
       - name: Get current version
         id: current_version
         run: |
-          VERSION=$(jq -r '.version' custom_components/sensus_analytics/manifest.json)
+          VERSION=$(jq -r '.version' custom_components/sensus_analytics_gas/manifest.json)
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Get previous version
@@ -41,7 +41,7 @@ jobs:
             echo "No previous commit found. Setting PREV_VERSION to empty."
             PREV_VERSION=""
           else
-            PREV_VERSION=$(git show "$PREV_SHA":custom_components/sensus_analytics/manifest.json 2>/dev/null | jq -r '.version' || echo "")
+            PREV_VERSION=$(git show "$PREV_SHA":custom_components/sensus_analytics_gas/manifest.json 2>/dev/null | jq -r '.version' || echo "")
           fi
           echo "PREV_VERSION=$PREV_VERSION" >> $GITHUB_ENV
 
