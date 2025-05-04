@@ -3,7 +3,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Configure Sensus Analytics",
+        "title": "Configure Sensus Analytics (Natural Gas)",
         "data": {
           "base_url": "Base URL",
           "username": "Username",
@@ -28,7 +28,7 @@
   "options": {
     "step": {
       "init": {
-        "title": "Update Sensus Analytics Configuration",
+        "title": "Update Sensus Analytics (Natural Gas) Configuration",
         "data": {
           "base_url": "Base URL",
           "username": "Username",

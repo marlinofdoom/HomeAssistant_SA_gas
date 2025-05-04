@@ -141,7 +141,7 @@ class SensusAnalyticsOptionsFlow(config_entries.OptionsFlow):
                 ): vol.In(["Therm", "CCF"]),
                 vol.Required(
                     "gas_commodity_fixed_price",
-                    default=current_data.get("gas_commodity_fixed_price", 0.072),
+                    default=current_data.get("gas_commodity_fixed_price", 0.72),
                 ): cv.positive_float,
                 vol.Optional(
                     "gas_commodity_variable_price",

@@ -1,4 +1,4 @@
-# Sensus Analytics Integration
+# Sensus Analytics Integration (Natural Gas)
 
 Monitor your natural gas usage directly in Home Assistant via integration with Sensus Analytics.
 

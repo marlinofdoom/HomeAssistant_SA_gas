@@ -87,12 +87,12 @@ A custom Home Assistant integration to monitor your natural gas usage from Sensu
 
 Below are the sensor entities created by this integration:
 
-- `sensor.sensus_analytics_gas_daily_usage`: Daily water usage.
+- `sensor.sensus_analytics_gas_daily_usage`: Daily natural gas usage.
 - `sensor.sensus_analytics_gas_usage_unit`: Native unit of measurement chosen by Sensus Analytics.
-- `sensor.sensus_analytics_gas_meter_address`: Street address of the water meter.
+- `sensor.sensus_analytics_gas_meter_address`: Street address of the natural gas meter.
 - `sensor.sensus_analytics_gas_last_read`: Timestamp of the last meter reading.
 - `sensor.sensus_analytics_gas_meter_longitude`: Longitude coordinate of the meter's location.
-- `sensor.sensus_analytics_gas_meter_id`: Unique identifier for the water meter.
+- `sensor.sensus_analytics_gas_meter_id`: Unique identifier for the natural gas meter.
 - `sensor.sensus_analytics_gas_meter_latitude`: Latitude coordinate of the meter's location.
 - `sensor.sensus_analytics_gas_meter_odometer`: Total cumulative usage recorded by the meter.
 - `sensor.sensus_analytics_gas_billing_usage`: Total usage amount that has been billed.
