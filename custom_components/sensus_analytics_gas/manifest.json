@@ -1,5 +1,5 @@
 {
-  "domain": "sensus_analytics",
+  "domain": "sensus_analytics_gas",
   "name": "Sensus Analytics Integration (Natural Gas)",
   "version": "0.1.0",
   "documentation": "https://github.com/marlinofdoom/HomeAssistant_SA_gas",
