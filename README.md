@@ -98,7 +98,7 @@ Below are the sensor entities created by this integration:
 - `sensor.sensus_analytics_gas_billing_usage`: Total usage amount that has been billed.
 - `sensor.sensus_analytics_gas_billing_cost`: Total cost of the billed usage.
 - `sensor.sensus_analytics_gas_daily_fee`: Daily fee based on usage.
-- `sensor.sensus_analytics_gas_last_hour_usage`: Water usage for the last hour from the previous day.
+- `sensor.sensus_analytics_gas_last_hour_usage`: Natural gas usage for the last hour from the previous day.
 - `sensor.sensus_analytics_last_hour_temperature`: Temperature for the last hour from the previous day.
 - `sensor.sensus_analytics_last_hour_timestamp`: Timestamp of the last hour's data from the previous day.
 

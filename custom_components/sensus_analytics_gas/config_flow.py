@@ -1,4 +1,4 @@
-"""Config flow for Sensus Analytics Integration."""
+"""Config flow for Sensus Analytics Natural Gas Integration."""
 
 from __future__ import annotations
 
