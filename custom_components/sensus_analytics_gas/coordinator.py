@@ -184,23 +184,20 @@ class SensusAnalyticsDataUpdateCoordinator(DataUpdateCoordinator):
             return None
 
         # The first element contains units
-        units = usage_list[0]  # ["CCF", "INCHES", "FAHRENHEIT", "gal"]
+        units = usage_list[0]  # ["CCF", "FAHRENHEIT", "CCF"]
         usage_unit = units[0]
-        rain_unit = units[1]  # FIX don't need this
-        temp_unit = units[2]
+        temp_unit = units[1]
 
         # The rest of the list contains hourly data
         hourly_entries = []
         for entry in usage_list[1:]:
-            timestamp, usage, rain, temp = entry[:4]  # FIX don't need rain
+            timestamp, usage, temp = entry[:3]  # changed index from 4 to 3 when ditching rain units, but I'm not sure this is right
             hourly_entries.append(
                 {
                     "timestamp": timestamp,
                     "usage": usage,
-                    "rain": rain,  # FIX don't need this
                     "temp": temp,
                     "usage_unit": usage_unit,
-                    "rain_unit": rain_unit,  # FIX don't need this
                     "temp_unit": temp_unit,
                 }
             )
