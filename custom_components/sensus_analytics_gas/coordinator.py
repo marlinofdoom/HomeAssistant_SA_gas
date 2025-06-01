@@ -191,7 +191,9 @@ class SensusAnalyticsDataUpdateCoordinator(DataUpdateCoordinator):
         # The rest of the list contains hourly data
         hourly_entries = []
         for entry in usage_list[1:]:
-            timestamp, usage, temp = entry[:3]  # changed index from 4 to 3 when ditching rain units, but I'm not sure this is right
+            timestamp, usage, temp = entry[
+                :3
+            ]  # changed index from 4 to 3 when ditching rain units, but I'm not sure this is right
             hourly_entries.append(
                 {
                     "timestamp": timestamp,
